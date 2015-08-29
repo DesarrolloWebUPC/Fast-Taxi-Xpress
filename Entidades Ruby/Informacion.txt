@@ -1,0 +1,17 @@
+Realiza las class de las entidades que se encuentra en el diagrama:
+
+Jose Luis
+Usuario
+Saldo
+TarjetaCredito
+UbicacionFrecuente
+
+
+David
+AsignacionTransporte
+Conductores
+Distritos
+CostoUbicacion
+
+
+Realizar solo hasta el momento los procesos de insertar,eliminar,actualizar
