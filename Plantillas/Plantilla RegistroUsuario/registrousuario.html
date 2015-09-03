@@ -1,0 +1,84 @@
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Registro Usuario</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="regusuario.css">
+    <script src="jquery-1.8.3.min.js"></script> 
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+        $('#btnretornar').click(function(){
+
+          document.location.href ="#close";
+
+        });
+
+
+         
+
+
+      });
+
+    </script>
+</head>
+<body>
+
+<a href="#openModal">Registrar Usuario</a>
+
+<div id="openModal" class="modalDialog">
+<div>
+  <a href="#close" title="Close" class="close">X</a>
+<form>
+<div> <!--id="contregusuario">-->
+   <div class="tituloreg">Registro de Usuario Taxi Xpress</div>
+   <br/>
+    <table>
+      <tbody>
+          <tr>
+            <td class="label">Nombre Completo:</td>
+            <td><input type="text" id="txtnombre" class="cajatexto" placeholder="Ingrese Nombres Completos" required pattern="[a-zA-Z]+" aria-required="true" aria-describedby="name-format" title="Ingrese Nombre Completo"/></td>
+          </tr>
+          <tr>
+            <td class="label">Apellidos Completos:</td>
+            <td><input type="text" id="txtapellido"  class="cajatexto" placeholder="Ingrese Apellidos Completos" required pattern="[a-zA-Z]+\s[a-zA-Z]+" aria-required="true" aria-describedby="name-format" title="Ingrese Apellidos Completo"/></td>
+          </tr>
+          <tr>
+            <td class="label">Email:</td>
+            <td><input type="email" id="txtemail" class="cajatexto" placeholder="Ingrese Email" required aria-required="true"/></td>
+          </tr>
+          <tr>
+            <td class="label">Telefono:</td>
+            <td><input type="tel" id="txttelefono"  class="cajatexto"  required pattern="^[9|8|7|6]\d{8}$" 
+               title="Formato {999999999}" placeholder="Ingrese Telefono"/></td>
+          </tr>
+          <tr>
+            <td class="label">Edad:</td>
+            <td><input type="number" id="txtedad" class="cajatexto" 
+              required aria-required="true" min="1" max="99" style="width:20%;"/></td>
+          </tr>
+          <tr>
+            <td class="label">Codigo Cliente:</td>
+            <td><input type="text" id="txtcodigo" class="cajatexto"/></td>
+          </tr>
+          <tr>
+            <td class="label">Password:</td>
+            <td><input type="password" id="txtpassword" class="cajatexto" placeholder="Ingrese Password" required aria-required="true"/></td>
+          </tr>
+      </tbody>
+    </table>
+    <br/>
+<div style="padding: 0px 0px 0px 60px;">
+<input type="submit" value="Registrar Usuario" id="btnregusuario"/>
+<input type="button" value="Cancelar Registro" id="btnretornar" href="#close"/>
+<div>
+</div>
+</form>
+
+</div>
+</div>
+  </body>
+</html>
